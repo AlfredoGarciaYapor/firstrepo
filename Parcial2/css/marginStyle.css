@@ -1,0 +1,17 @@
+html{
+	scroll-behavior: smooth;
+}
+
+p{
+	border: #333 2px solid;
+}
+
+p.p1{
+	margin-top: 50px;
+}
+p.p2{
+	margin: 0px 150px 0px 0px;
+}
+p.p3{
+	margin-bottom: 100px;
+}
