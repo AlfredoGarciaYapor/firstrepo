@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Convertidos de grados celsius a farenheit</title>
+</head>
+<body>
+	<h1>Convertidor de grados celsius a farenheit </h1>
+	<br>
+	Ingresa la temperatura en grados celsius que deseas convertir:
+	<input type="number" step="1" name="gradosc" id="gradosc">
+	<button onclick="convertir()"> Enter </button>
+	<br>
+</body>
+<script type="text/javascript">
+	function convertir(){
+		var cel = parseInt(document.getElementById('gradosc').value);
+		var far = (cel * 1.8) +32;
+		alert("El resultado en grados farenheit es "+far)
+	}
+</script>
+</html>

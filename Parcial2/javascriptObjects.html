@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practica JSON</title>
+</head>
+<h1>JavaScript Objects</h1>
+<p id="parrafo"></p>
+<button onclick="showFirtsName()">First name</button>
+<button onclick="showLastName()">Last name</button>
+<button onclick="showAge()">Age</button>
+<button onclick="showMatricula()">Matricula</button>
+
+<script>
+	var myJSON = '{"firstName":"Alfredo", "lastName":"Garcia Yapor", "age":31, "matricula":8180}';
+	var myObj = JSON.parse(myJSON);
+
+	function showFirtsName() {
+  		document.getElementById("parrafo").innerHTML = myObj.firstName;
+	}
+
+	function showLastName() {
+  		document.getElementById("parrafo").innerHTML = myObj.lastName;
+	}
+
+	function showAge() {
+  		document.getElementById("parrafo").innerHTML = myObj.age;
+	}
+
+	function showMatricula() {
+  		document.getElementById("parrafo").innerHTML = myObj.matricula;
+	}
+
+</script>
+
+</body>
+</html>
